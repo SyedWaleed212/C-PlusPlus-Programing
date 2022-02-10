@@ -1,0 +1,32 @@
+#include <iostream>  //standard i/o header file
+using namespace std; 
+int main() 
+{ 
+   char grade;
+  cout<<"Enter your grade:"<<endl;
+	cin>>grade;
+	switch (grade)
+{ 
+        case 'A': case 'a': // if the user type these letters the code will give output, output depends on the letter use in case condition
+	            cout<<"Your average must be between 90 – 100";
+            	break;
+              
+	      case 'B': case 'b':
+	            cout<<"Your average must be between 80 - 89";
+             	break;
+              
+	      case 'C': case 'c':
+           	 cout<<"Your average must be between 70 - 79";
+	           break;
+             
+	      case 'D': case 'd':
+           	 cout<<"Your average must be between 60 - 69";
+          	 break;
+             
+      	default:
+	            cout<<"Your average must be below 60"; 
+   }
+   
+	return 0;
+  
+	 }
