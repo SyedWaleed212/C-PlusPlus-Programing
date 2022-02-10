@@ -1,0 +1,32 @@
+#include<iostream> //standard i/o header file
+#include<cmath> // This body is use if we perform any mathematics operations
+using namespace std;
+int main()
+{
+float a,b;
+   cout<<"ENter any two number "<<endl;
+   cin>>a>>b;
+   char op;
+   cout<<"Enter Operation (+,-,*,/,sqrt)"<<endl;
+   cin>>op;
+   
+   
+      if (op=='+') //This operation will perform addition of two numbers
+	     cout<<"Addision of two number is = " <<a+b<<endl;
+            
+      else if (op=='-') // This Operation will perform subtraction of two numbers
+            cout<<"Subtraction of number is = " <<a-b<<endl;
+            
+       else if (op=='*') //This Operation will perform multiplication of two number
+           cout<<"Multiplication of number is = " <<a*b<<endl;
+           
+       else if (op=='/') //This operation will perform division of two numbers
+           cout<<"Division of number is = " <<a/b<<endl;
+           
+      else if (sqrt(a)) // This operation will perform sqrt of numbers
+            cout<<"Square root of a is = "<<sqrt(a)<<endl;
+   
+       else // if the operation are not of them then it will show wrong operation
+              cout<<"wrong operator"; 
+   return 0;
+}
