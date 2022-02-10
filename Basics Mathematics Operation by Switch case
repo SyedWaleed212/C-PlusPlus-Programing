@@ -1,0 +1,32 @@
+#include<iostream> //standard i/o header file
+#include<cmath>
+using namespace std;
+int main()
+{ 
+float a,b;
+   cout<<"ENter any two number "<<endl;
+   cin>>a>>b;
+   char op;
+   cout<<"Enter Operation (+,-,*,/)"<<endl; 
+   cin>>op; //it will take user Input
+   
+   switch(op)
+   {
+   	case '+': // if the user type this sign code will add two numbers
+   	cout<<"Addision of two number is = " <<a+b<<endl;
+   	break;
+    case '-': // If the user type this sign then code will perform subtraction
+   	cout<<"Subtraction of two number is = " <<a-b<<endl;
+   	break;
+	case '*': // if the user type this sign the code will multiplication
+   	cout<<"Multiplication of two number is = " <<a*b<<endl;
+   	break;
+	case '/': // If the user type this sign then the code will perform division
+   	cout<<"Division of two number is = " <<a/b<<endl;
+   	break;
+	                                                      
+   default : // if the user type ofher sign then it shows wrong operation
+   cout<<"wrong operator"<<endl;
+   }
+   return 0;
+   }
